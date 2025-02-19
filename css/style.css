@@ -3,11 +3,9 @@
     src: url('../fonts/Norse-Bold.otf');
 }
 
-/*
-div {
-    border: solid 1px black;
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
-*/
 
 .container {
     display: flex;
@@ -25,16 +23,6 @@ div {
     padding-top: 25%;
     background-image: url('../img/background.jpg');
     background-size: 100% 100%;
-}
-
-.form {
-    flex: 2 0 auto;
-    height: 100%;
-    padding: 5px;
-    background-color: lightgrey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 div.logo {
@@ -62,4 +50,58 @@ img.logo {
     color: white;
     font-size: 0.8rem;
     justify-self: flex-end;
+}
+
+.form {
+    flex: 2 0 auto;
+    height: 100%;
+    padding: 5px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+form p.title {
+    width: 100%;
+}
+
+div.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+div.row > p {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+button {
+    width: 160px;
+    height: 40px;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: #596D48;
+    font-weight: bold;
+    color: white;
+}
+
+p a {
+    color: #596D48;
+    font-weight: bold;
 }
