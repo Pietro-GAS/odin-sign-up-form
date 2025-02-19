@@ -46,11 +46,15 @@
                 <div class="row">
                     <p>
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}" placeholder="my_Passw0rd" required>
+                        <input type="password" id="pwd" name="pwd" 
+                        placeholder="myPassw0rd!"
+                        pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$" required>
                     </p>
                     <p>
                         <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="pwd-confirm" name="pwd-confirm" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+                        <input type="password" id="pwd-confirm" 
+                        name="pwd-confirm" placeholder="myPassw0rd!" 
+                        pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$" required>
                     </p>
                 </div>
             </form>

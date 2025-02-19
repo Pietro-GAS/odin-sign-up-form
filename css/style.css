@@ -92,18 +92,20 @@ label {
     font-weight: bold;
 }
 
-input {
+input:valid {
     border: solid 1px #E5E7EB;
     border-radius: 3px;
 }
 
 input:focus {
     border: solid 1px blue;
+    border-radius: 3px;
     box-shadow: 3px 3px 2px lightblue;
 }
 
 input:invalid {
     border: solid 1px red;
+    border-radius: 3px;
 }
 
 button {
