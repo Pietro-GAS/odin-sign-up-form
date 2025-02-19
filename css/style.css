@@ -91,6 +91,20 @@ label {
     font-weight: bold;
 }
 
+input {
+    border: solid 1px #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: solid 1px blue;
+    box-shadow: 3px 3px 2px lightblue;
+}
+
+input:invalid {
+    border: solid 1px red;
+}
+
 button {
     width: 160px;
     height: 40px;
